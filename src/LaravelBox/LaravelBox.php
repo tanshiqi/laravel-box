@@ -184,4 +184,12 @@ class LaravelBox
 
         return $command->execute();
     }
+
+
+    public function downscopeToken(string $folderId)
+    {
+        $command = FolderCommandFactory::build($this->token, $folderId, 'downscope-token');
+
+        return $command->execute();
+    }
 }

@@ -2,8 +2,9 @@
 
 namespace LaravelBox\Factories;
 
-use LaravelBox\Commands\Folders\DeleteFolderCommand;
 use LaravelBox\Commands\Folders\CreateFolderCommand;
+use LaravelBox\Commands\Folders\DeleteFolderCommand;
+use LaravelBox\Commands\Folders\DownscopeTokenCommand;
 use LaravelBox\Commands\Folders\GetFolderItemsCommand;
 
 class FolderCommandFactory
@@ -37,6 +38,13 @@ class FolderCommandFactory
                 $limit = func_get_arg(3);
 
                 return new GetFolderItemsCommand($token, $path, $offset, $limit);
+                break;
+
+
+            case 'downscope-token':
+                $token = func_get_arg(0);
+                $path = func_get_arg(1);
+                return new DownscopeTokenCommand($token, $path);
                 break;
 
             default:

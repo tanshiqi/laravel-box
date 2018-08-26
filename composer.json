@@ -1,21 +1,21 @@
 {
-    "name": "ryanvade/laravel-box",
+    "name": "atan/laravel-box",
     "description": "A Box.com API wrapper for Laravel.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "type": "library",
     "require": {
         "illuminate/support": "^5.2",
         "illuminate/database": "^5.2",
         "doctrine/dbal": "^2.5",
-        "guzzlehttp/guzzle": "^6.2",
-        "nesbot/carbon": "^1.22",
+        "guzzlehttp/guzzle": "^6.3",
+        "nesbot/carbon": "^1.25",
         "illuminate/contracts": "^5.2"
     },
     "license": "MIT",
     "authors": [
         {
-            "name": "Ryan Owens",
-            "email": "RyanOwens@linux.com"
+            "name": "atan",
+            "email": "tanshiqi@gmail.com"
         }
     ],
     "autoload": {
